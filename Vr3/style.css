@@ -76,8 +76,9 @@ a {
     position: relative;      
   }
 
-.centered {  
-    font-size:100%; 
+.centered { 
+     /*with 0.7rem for responsive  */
+    font-size:0.7rem; 
     position: relative;
     text-align: center;
     bottom: 75%;   
