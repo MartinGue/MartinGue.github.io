@@ -78,8 +78,8 @@ a {
 
 .centered {  
     font-size:100%; 
-    position: absolute;
-    bottom: 63%;    
+    position: relative;
+    bottom: 75%;    
     left:10%;
   }
 
