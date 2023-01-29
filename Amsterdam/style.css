@@ -6,8 +6,7 @@
 }
 
 h1 {
-    text-shadow: .2em .2em .5em black;
-    font-family: "Sofia", sans-serif;
+    text-shadow: .2em .2em .5em black;   
 }
 
 h2 {
@@ -125,6 +124,7 @@ img.transparent {
     font-size: 50px;
     color: white;
     padding-top: 50px;
+    font-family: "Sofia", sans-serif;
 }
 
 
