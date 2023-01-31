@@ -13,14 +13,46 @@
         <label for="menu-toggle"><i class="fa fa-bars"></i> MENU</label>
         <input type="checkbox" id="menu-toggle">
         <ul>
-            <li><i class="fa fa-home"></i><a href="/Eindopdracht HTML&CSS/index.html">Home</a></li>
-            <li><i class="fa fa-newspaper-o" aria-hidden="true"></i><a href="/Eindopdracht HTML&CSS/history.html">History</a></li>
-            <li><i class="fa fa-credit-card-alt" aria-hidden="true"></i><a href="/Eindopdracht HTML&CSS/unexpected.html">Unexpected</a></li>
-            <li><i class="fa fa-anchor" aria-hidden="true"></i><a href="/Eindopdracht HTML&CSS/surprise.html">Surprise</a></li>
-            <li><i class="fa fa-address-book-o" aria-hidden="true"></i><a href="/Eindopdracht HTML&CSS/contact.html">Contact</a></li>
+            <li><i class="fa fa-home"></i><a href="index">Home</a></li>
+            <li><i class="fa fa-newspaper-o" aria-hidden="true"></i><a href="/history.html">History</a></li>
+            <li><i class="fa fa-credit-card-alt" aria-hidden="true"></i><a href="/unexpected.html">Unexpected</a></li>
+            <li><i class="fa fa-anchor" aria-hidden="true"></i><a href="/surprise.html">Surprise</a></li>
+            <li class="active"><i class="fa fa-address-book-o" aria-hidden="true"></i><a href="contact.html" id="contact">Contact</a></li>
         </ul>
     </nav>
-    <div class="container">
+
+    <img src="/images/Coat_of_arms_of_Amsterdam.svg.png" alt="Coat_of_arms_of_Amsterdam" class="center">
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <h2>Contact Formulier</h2>
+  
+        <label> <span>Naam:</span><input type="text" name="verzend_naam" required> </label><br>
+        <label>
+         
+          <span>Telefoonnummer:</span>
+          <input type="text" name="verzend_telefoonnummer">
+        </label>
+        <label
+          ><br>
+          <span>Emailadres:</span>
+          <input type="email" title="Vul hier uw emailadres in" name="verzend_emailadres" required> </label
+        ><br>   
+        <p>
+            <textarea
+              id="message"
+              rows="4"
+              cols="50"
+              placeholder="Opmerkingen"
+              name="verzend_bericht"
+              required
+            ></textarea>
+          </p>         
+          <input type="submit">
+        </form>
+  
+                
+
+    <!-- <div class="container">
         <form onsubmit="sendEmail(); reset(); return false;">
             <h3>Get in touch</h3>
             <input type="text" id="name" placeholder="Your Name" required>
@@ -47,7 +79,19 @@
             message => alert("Message Sent Succesfully")
             );
         }
-    </script>
+    </script> -->
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#contact" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa fa-github w3-hover-opacity">Have a look at my github</i>
+      <br>      
+      <i class="fa fa-linkedin w3-hover-opacity">Or at my linkedin</i>
+    </div>
+  </footer>
+
     
 </body>
 </html>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Let's dive in the history of Amsterdam!</title>
 </head>
 
 <body>
@@ -15,20 +15,44 @@
         <label for="menu-toggle"><i class="fa fa-bars"></i> MENU</label>
         <input type="checkbox" id="menu-toggle">
         <ul>
-            <li><i class="fa fa-home"></i><a href="/Eindopdracht HTML&CSS/index.html">Home</a></li>
-            <li><i class="fa fa-newspaper-o" aria-hidden="true"></i><a href="/Eindopdracht HTML&CSS/history.html">History</a></li>
-            <li><i class="fa fa-credit-card-alt" aria-hidden="true"></i><a href="/Eindopdracht HTML&CSS/unexpected.html">Unexpected</a></li>
-            <li><i class="fa fa-anchor" aria-hidden="true"></i><a href="/Eindopdracht HTML&CSS/surprise.html">Surprise</a></li>
-            <li><i class="fa fa-address-book-o" aria-hidden="true"></i><a href="/Eindopdracht HTML&CSS/contact.html">Contact</a></li>
+            <li><i class="fa fa-home"></i><a href="index">Home</a></li>
+            <li class="dropdown active">
+                <button class="dropbtn"  id="history"></i>History
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#first">Early History</a>
+                    <a href="#middle">17th-18th-19th Century</a>
+                    <a href="#last">Last Centuries</a>
+                </div>
+                <br>
+            </li>
+            <li><i class="fa fa-credit-card-alt" aria-hidden="true"></i><a href="/unexpected.html">Unexpected</a></li>
+            <li><i class="fa fa-anchor" aria-hidden="true"></i><a href="/surprise.html">Surprise</a></li>
+            <li><i class="fa fa-address-book-o" aria-hidden="true"></i><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
+    <img src="/images/Coat_of_arms_of_Amsterdam.svg.png" alt="Coat_of_arms_of_Amsterdam" class="center">
+    <h2 id="first">Early history</h2>   
+        On October 27, 1275, Count Floris V granted toll-free access to the people at the dam in the Amstel. The Toll
+        Privilege from 1275 is the oldest written piece mentioning Amsterdam.
+        <br>
+   
+    <img src="/images/tolprivilege.jpg" alt="tolprivilege">
     <p>
         Amsterdam is the capital and largest city of the Netherlands. It has a rich history that spans several
         centuries.
-
+        
         The origins of Amsterdam can be traced back to the 12th century, when a small fishing village called
-        "Aemstelredamme" was established on the banks of the Amstel River. In the following centuries, Amsterdam grew in
+        "Aemstelredamme" was established on the banks of the Amstel River.</p>
+        
+        <img src="/images/damrak2-ahm.png" alt="drawing of a dam in the Amstel river">
+        <img src="/images/kog.jpg" alt="map of old Aemstelredamme">
+        
+        
+        
+        <p>In the following centuries, Amsterdam grew in
         size and importance, becoming a major center for trade and commerce.
 
         In the 14th and 15th centuries, Amsterdam was a small but prosperous city, known for its brewery, textile, and
@@ -38,27 +62,39 @@
         thriving merchant class. It was also a center of art, science, and culture, with many famous artists, such as
         Rembrandt and Vermeer, working and living in the city.
 
+<h2 id="middle">17th-18th-19th Century</h2>
+<img src="/images/17eeuw.jpg" alt="17th century">
+<img src="/images/800px-Cornelis_anthonisz_vogelvluchtkaart_amsterdam.jpeg" alt="old map of Amsterdam">
+<br>
+
         In the 17th century, Amsterdam continued to flourish as a major center of trade and commerce. The Dutch East
         India Company, which was based in Amsterdam, became one of the most powerful companies in the world, and
         Amsterdam was a major center of the global trade in spices, textiles, and other goods.
-
+<br>
         In the 18th and 19th centuries, Amsterdam's importance as a center of trade and commerce began to decline, but
         the city continued to grow and evolve. The industrial revolution brought new industries and new forms of
         transportation to the city, and Amsterdam became a major center of banking, insurance, and other services.
 
+        <h2 id="last">Last Centuries</h2>
+        <img src="/images/paard.jpg" alt="paard en koets">
+        <img src="/images/street-jordaan.jpg" alt="street in the jordaan ">
+        <br>
         In the 20th century, Amsterdam faced a number of challenges, including the devastation of World War II and the
         decline of traditional industries. However, the city has also undergone a process of revitalization and renewal,
         becoming a major center of tourism, culture, and innovation. Today, Amsterdam is a vibrant, cosmopolitan city
         that is known for its rich history, culture, and architecture.
-
-        It's important to note that Amsterdam has also a significant history related to the Jewish community. From the
-        17th century, Amsterdam attracted many Jewish refugees, particularly from Portugal and Spain. The Jewish
-        community established a strong presence in the city, and Amsterdam became one of the most important centers of
-        Jewish culture and learning in Europe. During the Holocaust, the majority of Amsterdam's Jewish population were
-        sent to concentration camps by the Nazi occupants and most of them were killed. Today, Amsterdam's Jewish
-        community is still active, but much smaller than it used to be.
+        
     </p>
 
 </body>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#history" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa fa-github w3-hover-opacity"></i>      
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </footer>
 
 </html>
