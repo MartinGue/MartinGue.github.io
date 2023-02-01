@@ -1,103 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Email Form</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Email Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="responsive.js"></script>
 </head>
+
 <body>
-    <nav>
-        <label for="menu-toggle"><i class="fa fa-bars"></i> MENU</label>
-        <input type="checkbox" id="menu-toggle">
-        <ul>
-            <li><i class="fa fa-home"></i><a href="index">Home</a></li>
-            <li><i class="fa fa-newspaper-o" aria-hidden="true"></i><a href="../Eindopdracht HTML&CSS/history.html">History</a></li>
-            <li><i class="fa fa-credit-card-alt" aria-hidden="true"></i><a href="../Eindopdracht HTML&CSS/unexpected.html">Unexpected</a></li>
-            <li><i class="fa fa-anchor" aria-hidden="true"></i><a href="../Eindopdracht HTML&CSS/surprise.html">Surprise</a></li>
-            <li class="active"><i class="fa fa-address-book-o" aria-hidden="true"></i><a href="../Eindopdracht HTML&CSS/contact.html" id="contact">Contact</a></li>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">History
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="history.html#first">Early History</a>
+        <a href="history.html#middle">17th-18th-19th Century</a>
+        <a href="history.html#last">Last Centuries</a>
+      </div>
+    </div>
+    <a href="/unexpected.html" id="unexpected">Unexpected</a>
+    <a href="/surprise.html">Surprise</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="#about" class="split"><img src="/images/logo.png" alt="logo" height="16px"></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5508.095217064336!2d4.9001612889517725!3d52.3717682452918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c6c0880e15%3A0x39914e99b51dcf8a!2sKoninklijk%20Paleis%20Amsterdam!5e0!3m2!1snl!2snl!4v1675252598532!5m2!1snl!2snl"
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  Please visit our Headquarters in the Palace right on the Dam-Square in the city center of Amsterdam.
+  <br>
+  <img class="logo" src="/images/Coat_of_arms_of_Amsterdam.svg.png" alt="Coat_of_arms_of_Amsterdam" class="center">
+
+  <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+    <h2>Contact Formulier</h2>
+
+    <label> <span>Naam:</span><input type="text" name="verzend_naam" required> </label><br>
+    <label>
+
+      <span>Telefoonnummer:</span>
+      <input type="text" name="verzend_telefoonnummer">
+    </label>
+    <label><br>
+      <span>Emailadres:</span>
+      <input type="email" title="Vul hier uw emailadres in" name="verzend_emailadres" required> </label><br>
+    <p>
+      <textarea id="message" rows="4" cols="50" placeholder="Opmerkingen" name="verzend_bericht" required></textarea>
+    </p>
+    <input type="submit">
+  </form>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <nav class="footer-nav">
+        <ul class="footer-menu">
+          <li><a href="/index.html">Home</a></li>
+          <li title="Check my github live pages."><a href="https://martingue.github.io"><i class="fa fa fa-github"></i></a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
-    </nav>
-
-    <img src="/images/Coat_of_arms_of_Amsterdam.svg.png" alt="Coat_of_arms_of_Amsterdam" class="center">
-
-    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
-        <h2>Contact Formulier</h2>
-  
-        <label> <span>Naam:</span><input type="text" name="verzend_naam" required> </label><br>
-        <label>
-         
-          <span>Telefoonnummer:</span>
-          <input type="text" name="verzend_telefoonnummer">
-        </label>
-        <label
-          ><br>
-          <span>Emailadres:</span>
-          <input type="email" title="Vul hier uw emailadres in" name="verzend_emailadres" required> </label
-        ><br>   
-        <p>
-            <textarea
-              id="message"
-              rows="4"
-              cols="50"
-              placeholder="Opmerkingen"
-              name="verzend_bericht"
-              required
-            ></textarea>
-          </p>         
-          <input type="submit">
-        </form>
-  
-                
-
-    <!-- <div class="container">
-        <form onsubmit="sendEmail(); reset(); return false;">
-            <h3>Get in touch</h3>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="text" id="phone" placeholder="Phone no." required>
-            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({                
-                SecureToken : "60821351-06e0-46fa-a87e-2d670e564f47",               
-                To : 'martin.guezen@gmail.com',
-                From : "martin.guezen@gmail.com",
-                Subject : "This is the subject",
-                Body : "Name: " + document.getElementById("name").value
-                + "<br> Email: " + document.getElementById("email").value
-                + "<br> Phone: " + document.getElementById("phone").value
-                + "<br> Message: " + document.getElementById("message").value           
-                
-            }).then(
-            message => alert("Message Sent Succesfully")
-            );
-        }
-    </script> -->
-
-    <div>
-      <img src="images/map.jpg" alt="map"
-        onclick="window.open('https://www.google.com/maps/place/MaxUnite+Communication+%26+Information+Services/@52.2861511,4.9641506,1381a,35y,39.13t/data=!3m1!1e3!4m5!3m4!1s0x0:0x95c20ffb169755f4!8m2!3d52.2937955!4d4.9711418?hl=nl',width=50,height=50)"
-        class="w3-image w3-round" style="width:100%">
-    </div>
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-    <a href="#contact" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-      <i class="fa fa fa-github w3-hover-opacity">Have a look at my github</i>
-      <br>      
-      <i class="fa fa-linkedin w3-hover-opacity">Or at my linkedin</i>
+      </nav>
+      <p title="Thanks very much for visiting Surprising Amsterdam!!" class="footer-copyright">&copy; Surprising Amsterdam</p>
     </div>
   </footer>
 
-    
 </body>
+
 </html>
