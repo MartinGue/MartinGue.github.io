@@ -7,69 +7,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="responsive.js"></script>
+
     <title>Welcome to the Surprising Amsterdam Website</title>
+
 </head>
 
-<body>
+<body id="top">
     <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
+        <a href="#home" class="active" id="home">Home</a>
         <div class="dropdown">
-            <button class="dropbtn">History
+            <button id="myBtn" class="dropbtn">History
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <a href="../Eindopdracht HTML&CSS/history.html#first">Early History</a>
-                <a href="../Eindopdracht HTML&CSS/history.html#middle">17th-18th-19th Century</a>
-                <a href="../Eindopdracht HTML&CSS/history.html#last">Last Centuries</a>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="history.html#first">Early History</a>
+                <a href="history.html#middle">17th-18th-19th Century</a>
+                <a href="history.html#last">Last Centuries</a>
             </div>
         </div>
-        <a href="unexpected.html" id="unexpected">Unexpected</a>
-        <a href="surprise.html">Surprise</a>
+        <a href="/unexpected.html" id="unexpected">Unexpected</a>
+        <a href="/surprise.html">Surprise</a>
         <a href="contact.html">Contact</a>
-        <a href="#about" class="split"><img src="/images/logo.png" alt="logo" height="16px"></a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>  
-    <br>    
-    <img class="logo" src="/images/Coat_of_arms_of_Amsterdam.svg.png" alt="Coat_of_arms_of_Amsterdam" class="center">
+        <a href="/index.html#top" class="split"><img src="/images/logo.png" class="logo" alt="logo"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776; Menu</a>
 
+    </div>
+    <br>
+    <img class="foto" src="https://blockchain-consultancy.eu/images-surprising/Coat_of_arms_of_Amsterdam.svg.png" alt="Coat_of_arms_of_Amsterdam">
     <h1>Surprising Amsterdam</h1>
+    <hr>
+
+    <div class="text-container">
+        <div class="text-column">
+            <p>
+                "Welcome to Surprising Amsterdam, your ultimate guide to the hidden gems and lesser-known treasures of
+                one of
+                the most vibrant and beautiful cities in the world.
+            </p>
+        </div>
+        <div class="text-column">
+            <p>
+            From secret gardens to underground clubs, from hidden
+            museums to undiscovered neighborhoods, we'll take you on a journey through the lesser-known side of
+            Amsterdam,
+            and show you the city like you've never seen it before.
+            </p>
+        </div>
+        <br>
+    </div>
+    <hr>
+    <div class="image-container">
+        <div class="item item-1">
+            <img src="https://blockchain-consultancy.eu/images-surprising/buildings-on-canal.jpg" alt="buildings on canal">
+        </div>
+        <div class="item item-2">
+            <img src="https://blockchain-consultancy.eu/images-surprising/building.jpg" alt="17th century buildings">
+        </div>
+        <div class="item item-3">
+            <video width="420" height="340" controls title="Thanks!! Rok Goes Around on Youtube.">
+                <source src="https://blockchain-consultancy.eu/images-surprising/Video.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="item item-4">
+            <img src="https://blockchain-consultancy.eu/images-surprising/street-jordaan.jpg" alt="street in jordaan">
+        </div>
+        <div class="item item-5">
+            <img src="https://blockchain-consultancy.eu/images-surprising/botenenmunt.jpg" alt="boats and mint">
+        </div>
+    </div>
+    <hr>
+
+    <div class="image-container-large">
+        <div class="large large-1">
+            <img src="https://blockchain-consultancy.eu/images-surprising/park.jpg" alt="bicycles on a bridge">
+            <p>Groen Amsterdam</p>
+        </div>
+
+        <div class="large large-2">
+            <iframe width="480" height="320" src="https://www.youtube.com/embed/SkDhnS49zGk?start=23"
+                title="YouTube video player" 
+                allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p>Thanks!! Rok Goes Around on Youtube.</p>
+        </div>
+
+        <div class="large large-3">
+            <img src="https://blockchain-consultancy.eu/images-surprising/bridge-bikes.jpg" alt="bicycles on a bridge">
+            <p> Fietsen in Amsterdam</p>
+        </div>
+
+    </div>
+    <hr>
 
     <p>
-        "Welcome to Surprising Amsterdam, your ultimate guide to the hidden gems and lesser-known treasures of one of
-        the most vibrant and beautiful cities in the world.
+        Join us and explore the charming, unexpected, unforgettable places that make Amsterdam truly unique. Let's start
+        discovering!"
     </p>
+    <br>
+    <br>
+    <footer class="footer">
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <ul class="footer-menu">
+                    <li title="To The Top"><a href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+                    </li>
+                    <li title="Check my github live pages."><a href="https://martingue.github.io">
+                            <i class="fa fa fa-github"></i></a></li>
+                </ul>
+            </nav>
+            <div title="Get in contact with us." class="footer-contact"><a href="/contact.html">Contact</a></div>
+        </div>
+    </footer>
 
-    <img src="/images/buildings-on canal.jpg" alt="buildings on canal">
-    <img src="/images/night-canal.jpg" alt="canal by night">
-    <img src="/images/street-jordaan.jpg" alt="street in jordaan">
-
-    <p>From secret gardens to underground clubs, from hidden
-        museums to undiscovered neighborhoods, we'll take you on a journey through the lesser-known side of Amsterdam,
-        and show you the city like you've never seen it before. Join us and explore the charming, unexpected, and
-        unforgettable places that make Amsterdam truly unique. Let's start discovering!"</p>
+    <script src="responsive.js"></script>
 
 </body>
-
-<!-- <footer>
-    <i class="fa fa fa-github w3-hover-opacity"></i>
-    <a href="#myTopnav">To the top</a>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-</footer> -->
-
-<footer class="footer">
-    <div class="footer-container">
-      <nav class="footer-nav">
-        <ul class="footer-menu">
-          <li><a href="#">Home</a></li>
-          <li title="Check my github live pages."><a href="https://martingue.github.io"><i class="fa fa fa-github"></i></a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <p title="Thanks very much for visiting Surprising Amsterdam!!" class="footer-copyright">&copy; Surprising Amsterdam</p>
-    </div>
-  </footer>
-
 
 
 </html>

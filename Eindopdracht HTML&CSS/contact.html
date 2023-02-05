@@ -11,32 +11,33 @@
   <script src="responsive.js"></script>
 </head>
 
-<body>
+<body id="top">
   <div class="topnav" id="myTopnav">
-    <a href="../Eindopdracht HTML&CSS/index.html">Home</a>
+    <a href="index.html">Home</a>
     <div class="dropdown">
-      <button class="dropbtn">History
+      <button id="myBtn" class="dropbtn">History
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content">
-        <a href="../Eindopdracht HTML&CSS/history.html#first">Early History</a>
-        <a href="../Eindopdracht HTML&CSS/history.html#middle">17th-18th-19th Century</a>
-        <a href="../Eindopdracht HTML&CSS/history.html#last">Last Centuries</a>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="history.html#first">Early History</a>
+        <a href="history.html#middle">17th-18th-19th Century</a>
+        <a href="history.html#last">Last Centuries</a>
       </div>
     </div>
-    <a href="../Eindopdracht HTML&CSS/unexpected.html" id="unexpected">Unexpected</a>
-    <a href="../Eindopdracht HTML&CSS/surprise.html">Surprise</a>
-    <a href="../Eindopdracht HTML&CSS/contact.html" class="active">Contact</a>
-    <a href="#about" class="split"><img src="/images/logo.png" alt="logo" height="16px"></a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="/unexpected.html" id="unexpected">Unexpected</a>
+    <a href="/surprise.html">Surprise</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="/index.html#top" class="split"><img src="/images/logo.png" alt="logo" class="logo"></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776; Menu</a>
   </div>
+  <br>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5508.095217064336!2d4.9001612889517725!3d52.3717682452918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c6c0880e15%3A0x39914e99b51dcf8a!2sKoninklijk%20Paleis%20Amsterdam!5e0!3m2!1snl!2snl!4v1675252598532!5m2!1snl!2snl"
-    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-  Please visit our Headquarters in the Palace right on the Dam-Square in the city center of Amsterdam.
+    width="2700" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <p>Please visit our Headquarters in the Palace right on the Dam-Square in the city center of Amsterdam.</p>
   <br>
-  <img class="logo" src="/images/Coat_of_arms_of_Amsterdam.svg.png" alt="Coat_of_arms_of_Amsterdam" class="center">
+  <img class="foto" src="https://blockchain-consultancy.eu/images-surprising/Coat_of_arms_of_Amsterdam.svg.png" alt="Coat_of_arms_of_Amsterdam">
 
   <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
     <h2>Contact Formulier</h2>
@@ -51,7 +52,8 @@
       <span>Emailadres:</span>
       <input type="email" title="Vul hier uw emailadres in" name="verzend_emailadres" required> </label><br>
     <p>
-      <textarea id="message" rows="4" cols="50" placeholder="Opmerkingen" name="verzend_bericht" required></textarea>
+      <span>Bericht</span>
+      <textarea id="message" rows="7" cols="50" placeholder="Opmerkingen" name="verzend_bericht" required></textarea>
     </p>
     <input type="submit">
   </form>
@@ -60,14 +62,17 @@
     <div class="footer-container">
       <nav class="footer-nav">
         <ul class="footer-menu">
-          <li><a href="/index.html">Home</a></li>
-          <li title="Check my github live pages."><a href="https://martingue.github.io"><i class="fa fa fa-github"></i></a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li title="To The Top"><a href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+          </li>
+          <li title="Check my github live pages."><a href="https://martingue.github.io">
+              <i class="fa fa fa-github"></i></a></li>
         </ul>
       </nav>
-      <p title="Thanks very much for visiting Surprising Amsterdam!!" class="footer-copyright">&copy; Surprising Amsterdam</p>
+      <div title="Get in contact with us." class="footer-contact"><a href="/contact.html">Contact</a></div>
     </div>
   </footer>
+
+  <script src="responsive.js"></script>
 
 </body>
 

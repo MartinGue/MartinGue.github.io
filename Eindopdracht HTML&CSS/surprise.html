@@ -8,41 +8,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="responsive.js"></script>
-    <title>Document</title>
+    <title>The Surprising City</title>
 </head>
 
-<body>
+<body id="top">
     <div class="topnav" id="myTopnav">
-        <a href="../Eindopdracht HTML&CSS/index.html">Home</a>
+        <a href="index.html">Home</a>
         <div class="dropdown">
-            <button class="dropbtn">History
+            <button id="myBtn" class="dropbtn">History
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <a href="../Eindopdracht HTML&CSS/history.html#first">Early History</a>
-                <a href="../Eindopdracht HTML&CSS/history.html#middle">17th-18th-19th Century</a>
-                <a href="../Eindopdracht HTML&CSS/history.html#last">Last Centuries</a>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="history.html#first">Early History</a>
+                <a href="history.html#middle">17th-18th-19th Century</a>
+                <a href="history.html#last">Last Centuries</a>
             </div>
         </div>
-        <a href="../Eindopdracht HTML&CSS/unexpected.html" id="unexpected">Unexpected</a>
-        <a href="../Eindopdracht HTML&CSS/surprise.html" class="active">Surprise</a>
-        <a href="../Eindopdracht HTML&CSS/contact.html">Contact</a>
-        <a href="#about" class="split"><img src="/images/logo.png" alt="logo" height="16px"></a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="/unexpected.html" id="unexpected">Unexpected</a>
+        <a href="/surprise.html" class="active">Surprise</a>
+        <a href="contact.html">Contact</a>
+        <a href="/index.html#top" class="split"><img src="/images/logo.png" alt="logo" class="logo"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776; Menu</a>
     </div>
-
-    <img class="logo" src="/images/Coat_of_arms_of_Amsterdam.svg.png" alt="Coat_of_arms_of_Amsterdam" class="center">
-
+    <br>
+    <img class="foto" src="https://blockchain-consultancy.eu/images-surprising/Coat_of_arms_of_Amsterdam.svg.png" alt="Coat_of_arms_of_Amsterdam">
     <p>
     <h2>Amsterdam: The Surprising City</h2>
 
+    <p>
     Amsterdam, the capital city of the Netherlands, is known for its picturesque canals, historical architecture, and
     vibrant cultural scene. However, there is much more to this city than meets the eye. Whether you are a first-time
     visitor or a seasoned traveler, here are some surprising facts about Amsterdam that are sure to leave you in awe.
     </p>
 
     <p>
-        <img src="/images/bikes.jpg" alt="bicycles parked on bridge">
+        <img src="https://blockchain-consultancy.eu/images-surprising/bikes.jpg" alt="bicycles parked on bridge">
         <br>
         Amsterdam is the cycling capital of the world.
         With over 800,000 bicycles and only 700,000 residents, Amsterdam is the world's leading city for cycling. The
@@ -53,7 +53,7 @@
     </p>
 
     <p>
-        <img src="/images/old-stockexchange.jpg" alt="old stockexchage">
+        <img src="https://blockchain-consultancy.eu/images-surprising/old-stockexchange.jpg" alt="old stockexchage">
         <br>
         Amsterdam is home to the world's first stock exchange.
         Established in 1720, the Amsterdam Stock Exchange was the first in the world and played a significant role in
@@ -63,7 +63,7 @@
     </p>
 
     <p>
-        <img src="/images/poles.png" alt="amsterdam build on poles">
+        <img src="https://blockchain-consultancy.eu/images-surprising/poles.png" alt="amsterdam build on poles">
         <br>
         Amsterdam is built on poles.
         The city of Amsterdam is built on poles, and the ground is below sea level. To protect against floods, the city
@@ -78,6 +78,7 @@
         interested in horticulture or just looking for a unique shopping experience.
     </p>
     <br>
+    <img src="https://blockchain-consultancy.eu/images-surprising/nemo.jpg" alt="nemo">
     <p>
         Amsterdam has its own floating forest.
         The NEMO Science Museum in Amsterdam is known for its distinctive green roof, which doubles as a floating
@@ -102,16 +103,20 @@
 
     <footer class="footer">
         <div class="footer-container">
-          <nav class="footer-nav">
-            <ul class="footer-menu">
-              <li><a href="/index.html">Home</a></li>
-              <li title="Check my github live pages."><a href="https://martingue.github.io"><i class="fa fa fa-github"></i></a></li>
-              <li><a href="/contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <p title="Thanks very much for visiting Surprising Amsterdam!!" class="footer-copyright">&copy; Surprising Amsterdam</p>
+            <nav class="footer-nav">
+                <ul class="footer-menu">
+                    <li title="To The Top"><a href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+                    </li>
+                    <li title="Check my github live pages."><a href="https://martingue.github.io">
+                            <i class="fa fa fa-github"></i></a></li>
+                </ul>
+            </nav>
+            <div title="Get in contact with us." class="footer-contact"><a href="/contact.html">Contact</a></div>
         </div>
-      </footer>
+    </footer>
+
+    <script src="responsive.js"></script>
+
 </body>
 
 </html>
