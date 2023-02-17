@@ -1,6 +1,6 @@
 English:
 
-This is the final assignment for the first block of LOI HBO Full-stack developer
+This is the final assignment for the first block of LOI HBO Full-stack developer.
 
 Here I have only placed the code, the images are hosted on another server:
 
