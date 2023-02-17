@@ -12,7 +12,7 @@ The surprising.amsterdam url links from Hostnet to the github live pages.
 Dutch:
 
 
-Dit is de eindopdracht voor het eerste blok LOI HBO Full-stack developer
+Dit is de eindopdracht voor het eerste blok LOI HBO Full-stack developer.
 
 Hier heb ik alleen de code geplaatst de plaatjes zijn gehost op een andere server nl :
 
@@ -24,7 +24,7 @@ De surprising.amsterdam url linkt vanuit Hostnet door naarde github live pages.
 
 Espagnol:
 
-Esta es la tarea final para el primer bloque de LOI HBO Full-stack developer
+Esta es la tarea final para el primer bloque de LOI HBO Full-stack developer.
 
 Aquí solo he colocado el código, las imágenes están alojadas en otro servidor:
 
